@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#pic{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<img src="picture.png" id="pic" width="100px">
+</body>
+<script>
+	picobj=document.getElementById('pic');
+	height=0;
+	width=0;
+	step=100;
+	document.onkeydown=function(event)
+	{
+		kc=event.keyCode;
+		switch(kc){
+			case 37:
+			width=width-step;
+			picobj.style.left=width+'px';
+			break;
+			case 38:
+			height=height-step;
+			picobj.style.top=height+'px';
+			break;
+			case 39:
+			width=width+step;
+			picobj.style.left=width+'px';
+			break;
+			case 40:
+			height=height+step;
+			picobj.style.top=height+'px';
+			break;
+
+		}
+	}
+</script>
+
