@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="lesson1.css">
+<head>
+	<meta charset="utf-8">
+	<title>
+	</title>
+</head>
+<body>
+</body>
+<script>
+	
+
+	function myFunc(){
+		var x='in';
+		
+	}
+	alert(x);
+
+	var x='out';
+	
+	function myFunc(){
+		x='in';
+		alert(x);
+		alert(this.x);
+	}
+	myFunc();
+
+	alert(x);
+</script>
+</html>
