@@ -1,0 +1,3 @@
+[submodule "gittest"]
+	path = gittest
+	url = https://github.com/alituofo/gittest.git
